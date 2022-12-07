@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Fernando Vélez - Part 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        /* ********** Mobile ********** */
+        .header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            left: 0%;
+            top: 0%;
+        }
+
+        .terms {
+            display: flex;
+            flex-direction: row;
+            height: 28px;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            padding: 0px 16px 0px 0px;
+            background: #00344F;
+            justify-content: end;
+        }
+
+        .legalList {
+            display: none;
+        }
+
+        .itemTerms {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .textTerms {
+            position: relative;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+            text-align: end;
+            margin: auto 0px;
+        }
+
+        /* Nav  */
+        .menu {
+            position: relative;
+            background: #F7F7F7;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            justify-content: space-between;
+            margin: 0px;
+        }
+
+        .barsMenu {
+            display: flex;
+            flex-direction: column;
+            margin: auto 0px;
+            margin-left: 20px;
+        }
+
+        .eachBar {
+            margin: 1px 0px;
+        }
+
+        .companyName {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .containerInfo {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+        }
+
+        .interactivePanel {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .infoTop {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logoSquare {
+            width: 22px;
+            height: 21px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-right: 6px;
+        }
+
+        .reliabilityWeb {
+            display: flex;
+            flex-direction: column;
+            margin-top: 7px;
+            text-align: end;
+            height: 14px;
+        }
+
+        .infoBottom {
+            display: flex;
+            flex-direction: row;
+            margin-left: 29px;
+            margin-top: 4px;
+        }
+
+        .cultureOf {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            color: #094B6D;
+        }
+
+        .tradeMark {
+            margin-top: 5px;
+            height: 4.45px;
+        }
+
+        .lupa {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-right: 22px;
+            height: 17px;
+            cursor: pointer;
+        }
+
+        .inputSearch {
+            display: none;
+        }
+
+        .explore {
+            display: none;
+        }
+
+        .subscribe {
+            display: none;
+        }
+
+        /* advertising */
+        .publi {
+            position: relative;
+            top: 10px;
+        }
+
+        .advertisingContainer {
+            position: relative;
+        }
+
+        .advertisingImage {
+            height: 54px;
+            background-image: url(./pictures/image\ 4.png);
+            background-repeat: no-repeat;
+            background-size: 320px;
+            background-position-x:center;
+            background-position-y:center;
+        }
+
+        /* Events */
+        .eventsContainer {
+            position: relative;
+            top: 20px;
+            background: #F6F6F6;
+            padding-bottom: 2px;
+            margin-bottom: 20px;
+
+        }
+
+        .subtitleContainer {
+            display: flex;
+            flex-direction: row;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .greenSquare {
+            display: flex;
+            flex-direction: column;
+            margin: auto 20px;
+            width: 8px;
+            height: 9px;
+            background-color: #094B6D;
+        }
+
+        .subtitle3 {
+            font-weight: 700;
+            font-size: 33px;
+        }
+
+        .cardFeaturedContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cardFeaturedEvents {
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            width: 221px;
+            height: 275px;
+            margin: auto;
+            margin-bottom: 20px;
+            border: 1px solid #EEEEEE;
+        }
+
+        .cardTitle {
+            color: #FA9B00;
+            font-weight: 700;
+            font-size: 12px;
+            margin: 10px 10px 0px 10px;
+        }
+
+        .cardFeaturedImage {
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cardImage {
+            display: flex;
+            margin: 0px auto;
+            width: 100%;
+            justify-content: end;
+        }
+
+        .cardInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            height: 100px;
+        }
+
+        .cardDate {
+            font-weight: 700;
+            font-size: 16px;
+            margin: 0px auto;
+            line-height: 22.4px;
+        }
+
+        .cardCTA {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .cardTextCTA {
+            font-weight: 400;
+            font-size: 12px;
+            color: #094B6D;
+        }
+
+        .cardImageCTA {
+            display: flex;
+            flex-direction: column;
+            margin: auto 5px;
+            height: 5px;
+            width: 3px;
+        }
+
+        .mainContent {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .postContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post {
+            background: #FFFFFF;
+            width: 295px;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 20.58px 21.17px;
+        }
+
+        .postInfoTop {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .postInfo {
+            display: flex;
+            flex-direction: row;
+            margin: 2px 0px;
+        }
+
+        .postInfoImage {
+            height: 12.833333015441895px;
+            width: 11.666666984558105px;
+        }
+
+        .postInfoPosition {
+            width: 10px;
+            height: 15px;
+        }
+
+        .postInfoText {
+            font-weight: 700;
+            font-size: 12px;
+            color: #094B6D;
+            margin: 0;
+            margin-left: 8px;
+        }
+
+        .postData {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .postImage {
+            width: 115px;
+            height: 91px;
+        }
+
+        .postInformation {
+            display: flex;
+            flex-direction: column;
+            margin-left: 11px;
+            justify-content: space-between;
+        }
+
+        .postInformationTitle {
+            font-weight: 700;
+            font-size: 14px;
+            margin: 0;
+            color: #000000;
+        }
+
+        .postInformationType {
+            font-weight: 400;
+            font-size: 13px;
+            margin: 0;
+            color: #353535;
+        }
+
+        .advertisingBottom {
+            display: flex;
+            top: "18px";
+            left: "1032px";
+        }
+
+        .advertisingBottomImage {
+            width: 300px;
+            height: 250px;
+            margin: auto;
+        }
+
+
+        /* ********** Desktop ********** */
+        @media (min-width: 1440px) {
+
+            body {
+                padding: 0;
+            }
+
+            .terms {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                height: 38px;
+                background: #00344F;
+            }
+
+            .legalList {
+                display: flex;
+                flex-direction: row;
+                height: 38px;
+                margin: 0px;
+            }
+
+            .itemLegalList {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: auto;
+                align-items: center;
+                margin-right: 32px;
+            }
+
+            .itemLegalLink {
+                font-weight: 400;
+                font-size: 15px;
+                color: #ffffff;
+                list-style: none;
+                text-decoration: none;
+            }
+
+            .itemTerms {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .textTerms {
+                margin-right: 28px;
+            }
+
+            .spa {
+                text-decoration: underline;
+            }
+
+            .pipeSpa {
+                display: none;
+            }
+
+
+            /* Nav  */
+            .menu {
+                position: relative;
+                background: #F7F7F7;
+                height: 70px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .barsMenu {
+                display: none;
+            }
+
+            .companyName {
+                display: flex;
+                flex-direction: row;
+                margin-left: 30px;
+            }
+
+            .containerInfo {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .infoTop {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .logoSquare {
+                width: 33px;
+                height: 32px;
+                margin-right: 6px;
+            }
+
+            .reliabilityWeb {
+                margin-top: 11px;
+                height: 21px;
+            }
+
+            .infoBottom {
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+                margin-top: 16px;
+            }
+
+            .cultureOf {
+                font-size: 15px;
+                margin-top: 2px;
+            }
+
+            .tradeMark {
+                margin-top: 5px;
+                margin-left: -2px;
+                height: 6px;
+            }
+
+            .lupa {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-right: -40px;
+                height: 17px;
+            }
+
+            .search {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                margin-right: 36px;
+            }
+
+            .inputSearch {
+                display: flex;
+                width: 234px;
+                height: 39px;
+                border: 1px solid #DFDFDF;
+                border-radius: 142px;
+                padding-left: 50px;
+            }
+
+            .inputSearch::placeholder {
+                color: #76919F;
+                font-size: 13px;
+            }
+
+            .explore {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                margin-right: 49px;
+            }
+
+            .exploreText {
+                font-weight: 700;
+                font-size: 15px;
+                color: #000000;
+                margin-right: 16px;
+            }
+
+            .exploreImage {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                height: 7.41px;
+                width: 12px;
+                cursor: pointer;
+            }
+
+            .subscribe {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                margin-right: 28px;
+                background: #FA9B00;
+                height: 39px;
+                width: 104px;
+                border-radius: 52px;
+                cursor: pointer;
+            }
+
+            .subscribeText {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                font-weight: 700;
+                font-size: 13px;
+                color: #ffffff;
+            }
+
+
+            /* advertising */
+            .advertisingImage {
+                height: 155px;
+                background-image: url(./pictures/Memorial\ Imagery\ \ \(V2\)\ 728x90.png);
+                background-repeat: no-repeat;
+                background-size: 728px;
+                background-position-x:center;
+                background-position-y:center;
+            }
+
+
+            /* Events */
+            .subtitleContainer {
+                display: flex;
+                flex-direction: row;
+                max-width: 1220px;
+                margin: auto;
+            }
+
+            .cardFeaturedContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 1220px;
+                margin: auto;
+            }
+
+            .cardFeaturedEvents {
+                margin: 0px;
+                margin-bottom: 20px;
+            }
+
+            .mainContent {
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 1220px;
+                margin: auto;
+            }
+
+            .post {
+                width: 902px;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                padding: 21.17px 0px;
+            }
+
+            .postInfoTop {
+                flex-direction: row;
+                justify-content: space-between;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            .postInfo {
+                flex-direction: row;
+                margin-left: 20.58px;
+            }
+
+            .postData {
+                margin-left: 20.58px;
+            }
+
+            .postImage {
+                width: 154px;
+                height: 105px;
+            }
+
+            .postInformationTitle {
+                font-size: 26px;
+                margin-right: 20px;
+            }
+
+            .postInformationType {
+                font-size: 17px;
+            }
+
+            .advertisingBottom {
+                display: flex;
+                top: "18px";
+                left: "1032px";
+            }
+            
+            .advertisingBottomImage {
+                margin: 0;
+            }
+        }
+
+    </style>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const advertising = document.querySelector(".advertisingBottom");
+            const scrollPX = window.scrollY;
+           
+            if (window.matchMedia("(min-width: 1440px)").matches){
+                if(scrollPX > 665) {
+                    advertising.style.position = "fixed";
+                    advertising.style.top = "18px";
+                    advertising.style.left = "1032px";              
+                } else {
+                    advertising.style.position = "relative";
+                    advertising.style.top = "0px";
+                    advertising.style.left = "0px";
+                };
+            }
+        })
+
+    </script>
+</head>
+<body>
+    <nav class="header">
+        <div class="terms">
+            <ul class="legalList">
+                <li class="itemLegalList"><a href="https://www.rebelmouse.com" class="itemLegalLink">Terms of Service</a></li>
+                <li class="itemLegalList"><a href="https://www.rebelmouse.com" class="itemLegalLink">Privacy Policy</a></li>
+                <li class="itemLegalList"><a href="https://www.rebelmouse.com" class="itemLegalLink">Trademark and Copyright</a></li>
+                <li class="itemLegalList"><a href="https://www.rebelmouse.com" class="itemLegalLink">About Us</a></li>
+                <li class="itemLegalList"><a href="https://www.rebelmouse.com" class="itemLegalLink">Advertise on Reliabilityweb.com</a></li>
+                <li class="itemLegalList"><a href="https://www.rebelmouse.com" class="itemLegalLink">Steal These Graphics</a></li>
+            </ul>
+            <div class="itemTerms">
+                <p class="textTerms">Visite nuestro sitio en&nbsp<span class="spa">Español&nbsp</span><span class="pipeSpa">| Español</span></p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="barsMenu">
+                <img src="./pictures/Rectangle 11.png" alt="Bars menu" class="eachBar">
+                <img src="./pictures/Rectangle 12.png" alt="Bars menu" class="eachBar">
+                <img src="./pictures/Rectangle 13.png" alt="Bars menu" class="eachBar">
+            </div>
+
+            <div class="companyName">
+                <div class="containerInfo">
+                    <div class="infoTop">
+                        <img src="./pictures/reliabilityweb-logo 1.png" alt="reliabilityweb logo" class="logoSquare">
+                        <img src="./pictures/reliabilityweb-logo 2.png" alt="reliabilityweb logo" class="reliabilityWeb">
+                    </div>
+
+                    <div class="infoBottom">
+                        <p class="cultureOf">A Culture of Realibility</p>
+                        <img src="./pictures/reliabilityweb-logo 3.png" alt="trade mark" class="tradeMark">
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactivePanel">
+                <img src="./pictures/Shape.png" alt="Search" class="lupa">
+                <div class="search">
+                    <input type="text" class="inputSearch" placeholder="Search">
+                </div>
+
+                <div class="explore">
+                    <h3 class="exploreText">Explore</h3>
+                    <img src="./pictures/Vector-down.png" alt="Down" class="exploreImage">
+                </div>
+
+                <div class="subscribe">
+                    <h3 class="subscribeText">Subscribe</h3>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="publi">
+        <div class="advertisingContainer">
+            <div class="advertisingImage"></div>
+        </div>
+    </section>
+
+    <section class="eventsContainer">
+        
+        <div class="subtitleContainer">
+            <div class="greenSquare"></div>
+            <h3 class="subtitle3">Events</h3>
+        </div>
+
+        <div class="cardFeaturedContainer">
+            <div class="cardFeaturedEvents">
+                <h4 class="cardTitle">Featured Event</h4>
+                <div class="cardFeaturedImage">
+                    <img src="./pictures/image 63.png" alt="Certified Maintenance Manager" class="cardImage">
+                </div>
+                <div class="cardInfo">
+                    <p class="cardDate">January 1, 2021</p>
+                    <div class="cardCTA">
+                        <a href="https://www.rebelmouse.com" class="cardTextCTA">Learn More</a>
+                        <img src="./pictures/Vector.png" alt="Go to Rebel Mouse" class="cardImageCTA">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="cardFeaturedEvents">
+                <h4 class="cardTitle">Featured Event</h4>
+                <div class="cardFeaturedImage">
+                    <img src="./pictures/image 63.png" alt="Certified Maintenance Manager" class="cardImage">
+                </div>
+
+                <div class="cardInfo">
+                    <p class="cardDate">January 1 -<br>December 31, 2021</p> 
+                    <div class="cardCTA">
+                        <a href="https://www.rebelmouse.com" class="cardTextCTA">Learn More</a>
+                        <img src="./pictures/Vector.png" alt="Go to Rebel Mouse" class="cardImageCTA">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardFeaturedEvents">
+                <h4 class="cardTitle">Featured Event</h4>
+                <div class="cardFeaturedImage">
+                    <img src="./pictures/image 63-2.png" alt="Certified Maintenance Manager" class="cardImage">
+                </div>
+                <div class="cardInfo">
+                    <p class="cardDate">December 13 -<br>December 16, 2021<br>Marco Island , Florida</p>  
+                    <div class="cardCTA">
+                        <a href="https://www.rebelmouse.com" class="cardTextCTA">Learn More</a>
+                        <img src="./pictures/Vector.png" alt="Go to Rebel Mouse" class="cardImageCTA">
+                    </div>             
+                </div>
+
+            </div>
+    
+            <div class="cardFeaturedEvents">
+                <h4 class="cardTitle">Featured Event</h4>
+                <div class="cardFeaturedImage">
+                    <img src="./pictures/image 63.png" alt="Certified Maintenance Manager" class="cardImage">
+                </div>
+                <div class="cardInfo">
+                    <p class="cardDate">January 1, 2021</p>   
+                    <div class="cardCTA">
+                        <a href="https://www.rebelmouse.com" class="cardTextCTA">Learn More</a>
+                        <img src="./pictures/Vector.png" alt="Go to Rebel Mouse" class="cardImageCTA">
+                    </div>            
+                </div>
+            </div>
+    
+            <div class="cardFeaturedEvents">
+                <h4 class="cardTitle">Featured Event</h4>
+                <div class="cardFeaturedImage">
+                    <img src="./pictures/image 63-2.png" alt="Certified Maintenance Manager" class="cardImage">
+                </div>
+                <div class="cardInfo">
+                    <p class="cardDate">December 13 -<br>December 16, 2021<br>Marco Island , Florida</p>   
+                    <div class="cardCTA">
+                        <a href="https://www.rebelmouse.com" class="cardTextCTA">Learn More</a>
+                        <img src="./pictures/Vector.png" alt="Go to Rebel Mouse" class="cardImageCTA">
+                    </div>            
+                </div>
+            </div> 
+        </div>
+
+        <div class="mainContent">
+            <div class="postContainer">
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+
+                    <div class="postInfoTop">
+                        <div class="postInfo">
+                            <img src="./pictures/VectorC.png" alt="Calendar" class="postInfoImage">
+                            <h4 class="postInfoText">January 1 2021 - December 31 2021</h4>
+                        </div>
+                        <div class="postInfo">
+                            <img src="./pictures/VectorP.png" alt="Position" class="postInfoPosition">
+                            <h4 class="postInfoText">Marco Island, Florida 34145</h4>
+                        </div>
+                    </div>
+
+                    
+                    <div class="postData">
+                        <img src="./pictures/image 60.png" alt="Event image" class="postImage">
+                        <div class="postInformation">
+                            <h3 class="postInformationTitle">2021-Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                            <h4 class="postInformationType">Conference</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="advertisingBottom">
+                <img src="./pictures/Memorial Imagery (V1) 300x250.png" alt="Memorial Citizen Connect" class="advertisingBottomImage">
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html> 
